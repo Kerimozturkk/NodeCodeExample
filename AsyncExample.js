@@ -23,13 +23,16 @@ const addPost = (newPost) => {
 const showAllPosts = async () => {
     try {
         await addPost({ header: 'baslik8', content: 'icerik8' });
-        console.log('Yeni Liste:');
+        console.log('Yeni Post Listesi:');
         listPosts();
     } catch (err) {
         console.log(err);
     }
 }
 
+console.log('İlk Postlar')
+listPosts();
+console.log();
 showAllPosts();
 
 // addPost({ header: 'baslik12', content: 'icerik12' }).then(result => {
