@@ -1,12 +1,11 @@
-const circleArea = (r) => {
-    return Math.PI * r * r;
+function circleArea(r) {
+    return (Math.PI * r * r);
+}
+function circleCircumference(r) {
+    return (2 * Math.PI * r);
 }
 
-const circleCircumference  = (r) => {
-    return Math.PI * 2 * r;
-}
-
-export {
+module.exports = {
     circleArea,
     circleCircumference
 }
