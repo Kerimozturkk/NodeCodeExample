@@ -1,4 +1,5 @@
-import {circleArea,circleCircumference} from './circle.js'
+const circle = require('./circle');
 
-console.log(circleArea(5));
-console.log(circleCircumference(5));
+const r = 5
+console.log(circle.circleArea(r));
+console.log(circle.circleCircumference(r));
